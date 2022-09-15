@@ -1,24 +1,24 @@
-#include <iostream>
+include <iostream>
 
 constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[NELEMENTS]; 	// valtozo neve NELEMENTS elírva N_ELEMENTS helyett
-    std::cout << '1-100 ertekek duplazasa' 	// cout parancs szoveg '_' kozbefogva "_" helyett valamint nincs ; a sor vegen
-    for (int i = 0;)	// for ciklusbol hianyzik a valtozo es a leptetesi ertek
+    int *b = new int[N_ELEMENTS]; 	
+    std::cout << "1-100 ertekek duplazasa" ;	
+    for (int i = 0; i < N_ELEMENTS; i++)	
     {
         b[i] = i * 2;
     }
-    for (int i = 0; i; i++)	// nincs megadva a ciklus vegenek a feltetele
+    for (int i = 0; i < N_ELEMENTS; i++)
     {
-        std::cout << "Ertek:"	// hianyzik a ; a sor vegen es a kiirando ertek valamint a sortores
+        std::cout << "Ertek:" << b[i] << std::endl;	
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)		// sima , a ciklusban ; elvalaszto helyett
+    for (int i = 0; i < N_ELEMENTS; i++)		
     {
-        atlag += b[i]		// hianyzik a ; a sor vegen
+        atlag += b[i];		
     }	
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
