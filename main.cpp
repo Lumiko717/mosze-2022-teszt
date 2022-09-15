@@ -10,9 +10,9 @@ int main()
     {
         b[i] = i * 2;
     }
-    for (int i = 0; i; i++)
+    for (int i = 0; i; i++)	// nincs megadva a ciklus vegenek a feltetele
     {
-        std::cout << "Ertek:"	// hianyzik a ; a sor vegen
+        std::cout << "Ertek:"	// hianyzik a ; a sor vegen es a kiirando ertek valamint a sortores
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
